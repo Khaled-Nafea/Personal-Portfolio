@@ -6,7 +6,7 @@ let heroSection = document.getElementById("hero-section");
 let aboutSection = document.getElementById("about");
 let portfolioSection = document.getElementById("portfolio");
 let experienceSection = document.getElementById("experience");
-let testimonialsSection = document.getElementById("testimonials");
+let testimonialsSection = document.getElementById("feedback");
 let contactSection = document.getElementById("contact");
 
 /* ============= Navbar Events ============ */
@@ -16,17 +16,21 @@ themeToggleBtn.addEventListener("click", function() {
 
 for (let index = 0; index < navLinks.children.length; index++) {
     navLinks.children[index].addEventListener("click", function() {
-
+        
         for (let i = 0; i < navLinks.children.length; i++) {
             navLinks.children[i].classList.remove("active");
         }
     
         navLinks.children[index].classList.add("active");
+        let targetId = navLinks.children[index].getAttribute("data-target");
+        let targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
     });
 }
 
 window.addEventListener("scroll", function () {
-
     let scrollPosition = window.scrollY+150;
 
     for (let i = 0; i < navLinks.children.length; i++) {
@@ -53,19 +57,24 @@ window.addEventListener("scroll", function () {
         navLinks.children[4].classList.add("active");
         scrollToTopBtn.classList.remove("opacity-0", "invisible");
     }
-    else {
+    else if (scrollPosition < contactEnd) {
         navLinks.children[5].classList.add("active");
         scrollToTopBtn.classList.remove("opacity-0", "invisible");
     }
+    else {
+        navLinks.children[6].classList.add("active");
+        scrollToTopBtn.classList.remove("opacity-0", "invisible");
+    }
+
 });
 
 /* ============= Sections End ============ */
-let heroEnd = heroSection.clientHeight;
-let aboutEnd = heroEnd + aboutSection.clientHeight;
-let portfolioEnd = aboutEnd + portfolioSection.clientHeight;
-let experienceEnd = portfolioEnd + experienceSection.clientHeight;
-let testimonialsEnd = experienceEnd + testimonialsSection.clientHeight;
-
+let heroEnd = heroSection.offsetTop + heroSection.offsetHeight;
+let aboutEnd = aboutSection.offsetTop + aboutSection.offsetHeight;
+let portfolioEnd = portfolioSection.offsetTop + portfolioSection.offsetHeight;
+let experienceEnd = experienceSection.offsetTop + experienceSection.offsetHeight;
+let testimonialsEnd = testimonialsSection.offsetTop + testimonialsSection.offsetHeight;
+let contactEnd = contactSection.offsetTop + contactSection.offsetHeight;
 /* ============== Portfolio ============= */
 let portfolioFilters = document.getElementById("portfolio-filters");
 let portfolioItems = Array.from(document.querySelectorAll(".portfolio-item"));
