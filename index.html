@@ -604,407 +604,215 @@
           </h2>
           <div class="w-24 h-1.5 bg-linear-to-r from-primary to-secondary mx-auto rounded-full"></div>
         </div>
-
+    
         <div class="flex justify-center gap-4 mb-12 flex-wrap" id="portfolio-filters" role="group"
           aria-label="فلترة المشاريع">
           <button
             class="portfolio-filter active px-8 py-3 rounded-xl bg-linear-to-r from-primary to-secondary text-white font-bold transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
-            data-filter="all" aria-pressed="true" type="button">
-            الكل
-          </button>
+            data-filter="all" aria-pressed="true" type="button">الكل</button>
           <button
             class="portfolio-filter px-8 py-3 rounded-xl bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700"
-            data-filter="web" aria-pressed="false" type="button">
-            مواقع الويب
-          </button>
+            data-filter="html-css" aria-pressed="false" type="button">HTML & CSS</button>
           <button
             class="portfolio-filter px-8 py-3 rounded-xl bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700"
-            data-filter="app" aria-pressed="false" type="button">
-            التطبيقات
-          </button>
+            data-filter="js" aria-pressed="false" type="button">JavaScript</button>
           <button
             class="portfolio-filter px-8 py-3 rounded-xl bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700"
-            data-filter="design" aria-pressed="false" type="button">
-            التصميم
-          </button>
+            data-filter="react" aria-pressed="false" type="button">React</button>
           <button
             class="portfolio-filter px-8 py-3 rounded-xl bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700"
-            data-filter="ecommerce" aria-pressed="false" type="button">
-            التجارة الإلكترونية
-          </button>
+            data-filter="nextjs" aria-pressed="false" type="button">Next.js</button>
         </div>
-
+    
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
-          <div
-            class="portfolio-item group relative bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-300"
-            data-category="web">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-1-BqicZ04C.webp"
-                alt="modern e-commerce website design with purple gradient, shopping cart interface, product showcase" />
+    
+          <!-- 1: Game Arena -->
+          <div class="portfolio-item group relative bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-secondary transition-all duration-300"
+            data-category="html-css">
+            <div class="relative h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+              <img src="assets/imgs/Prot-1.png" alt="Game Arena Preview" class="w-full h-full object-cover" />
               <div
                 class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               </div>
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">موقع ويب</span>
+                <span class="px-4 py-1 bg-secondary/20 text-secondary rounded-full text-sm font-medium">HTML & CSS</span>
                 <div class="flex gap-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
+                  <a href="https://game-arena-chi.vercel.app" target="_blank"
+                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
                     aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
-                    aria-label="كود المشروع على GitHub">
-                    <i class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
+                    <i class="fa-solid fa-eye text-slate-600 dark:text-white hover:text-white" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold mb-2">متجر إلكتروني متكامل</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
-              </p>
+              <h3 class="text-2xl font-bold mb-2">Game Arena</h3>
+              <p class="text-slate-500 dark:text-slate-400 mb-4">موقع منصة ألعاب إلكترونية مع عرض للألعاب وبطولات الـ
+                eSports وتواصل مع الفريق</p>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">React</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Node.js</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">MongoDB</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">HTML</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">CSS</span>
               </div>
             </div>
           </div>
-
+    
+          <!-- 2: Clarity -->
           <div
-            class="portfolio-item  group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 hover:border-secondary transition-all duration-300"
-            data-category="app">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-2-D0_acfF_.webp"
-                alt="mobile task management app interface with colorful cards, todo list, modern UI design" />
+            class="portfolio-item group relative bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-accent transition-all duration-300"
+            data-category="html-css">
+            <div class="relative h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+              <img src="assets/imgs/Prot-2.png" alt="Clarity Preview" class="w-full h-full object-cover" />
               <div
                 class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               </div>
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-secondary/20 text-secondary rounded-full text-sm font-medium">تطبيق</span>
-                <div class="flex space-x-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
+                <span class="px-4 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">HTML & CSS</span>
+                <div class="flex gap-2">
+                  <a href="https://clarity-ten-nu.vercel.app" target="_blank"
+                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-300 group"
                     aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
-                    aria-label="كود المشروع على GitHub">
-                    <i class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
+                    <i class="fa-solid fa-eye text-slate-600 dark:text-white hover:text-white" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold mb-2">تطبيق إدارة المهام</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                تطبيق ويب تفاعلي لإدارة المهام مع ميزات التعاون الجماعي
-              </p>
+              <h3 class="text-2xl font-bold mb-2">Clarity</h3>
+              <p class="text-slate-500 dark:text-slate-400 mb-4">منصة حلول رقمية متكاملة تعرض خدمات الويب والموبايل والذكاء
+                الاصطناعي والتسويق</p>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Vue.js</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Firebase</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">HTML</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">CSS</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- 3: ContactHub -->
+          <div
+            class="portfolio-item group relative bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-300"
+            data-category="js">
+            <div class="relative h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+              <img src="assets/imgs/Prot-3.png" alt="ContactHub Preview" class="w-full h-full object-cover" />
+              <div
+                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-4 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">JavaScript</span>
+                <div class="flex gap-2">
+                  <a href="https://contact-hub-dusky.vercel.app" target="_blank"
+                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
+                    aria-label="معاينة المشروع">
+                    <i class="fa-solid fa-eye text-slate-600 dark:text-white hover:text-white" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">ContactHub</h3>
+              <p class="text-slate-500 dark:text-slate-400 mb-4">تطبيق ويب لإدارة جهات الاتصال مع إمكانية الإضافة والحذف
+                والتنظيم في مجموعات</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">HTML</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">CSS</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">JavaScript</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- 4: Cosmos Dashboard -->
+          <div
+            class="portfolio-item group relative bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-secondary transition-all duration-300"
+            data-category="js">
+            <div class="relative h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+              <img src="assets/imgs/Prot-4.png" alt="Cosmos Dashboard Preview" class="w-full h-full object-cover" />
+              <div
+                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-4 py-1 bg-secondary/20 text-secondary rounded-full text-sm font-medium">JavaScript</span>
+                <div class="flex gap-2">
+                  <a href="https://cosmos-space-dashboard-tau.vercel.app" target="_blank"
+                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
+                    aria-label="معاينة المشروع">
+                    <i class="fa-solid fa-eye text-slate-600 dark:text-white hover:text-white" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Cosmos Dashboard</h3>
+              <p class="text-slate-500 dark:text-slate-400 mb-4">داشبورد فضائي يعرض بيانات NASA اللحظية عن الكواكب
+                والإطلاقات وصور اليوم</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">HTML</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">CSS</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">JavaScript</span>
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">NASA API</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- 5: Social App React -->
+          <div
+            class="portfolio-item group relative bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-accent transition-all duration-300"
+            data-category="react">
+            <div class="relative h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+              <img src="assets/imgs/Prot-5.png" alt="Social App React Preview" class="w-full h-full object-cover" />
+              <div
+                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-4 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">React</span>
+                <div class="flex gap-2">
+                  <a href="https://socail-app-ruddy.vercel.app" target="_blank"
+                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-300 group"
+                    aria-label="معاينة المشروع">
+                    <i class="fa-solid fa-eye text-slate-600 dark:text-white hover:text-white" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Social App</h3>
+              <p class="text-slate-500 dark:text-slate-400 mb-4">تطبيق تواصل اجتماعي مبني بـ React</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">React</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- 6: FreshCart Next.js -->
+          <div class="portfolio-item group relative bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-300"
+            data-category="nextjs">
+            <div class="relative h-72 overflow-hidden bg-slate-900 flex items-center justify-center">
+              <img src="assets/imgs/Prot-6.png" alt="FreshCart Next.js Preview" class="w-full h-full object-cover" />
+              <div
+                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-4 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">Next.js</span>
+                <div class="flex gap-2">
+                  <a href="https://e-commerce-ebon-three-25.vercel.app" target="_blank"
+                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
+                    aria-label="معاينة المشروع">
+                    <i class="fa-solid fa-eye text-slate-600 dark:text-white hover:text-white" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">FreshCart</h3>
+              <p class="text-slate-500 dark:text-slate-400 mb-4">متجر إلكتروني متكامل مع نظام تسجيل دخول وسلة مشتريات وقائمة
+                أمنيات وتصفح الأصناف</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Next.js</span>
                 <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Tailwind</span>
               </div>
             </div>
           </div>
-
-          <div
-            class="portfolio-item  group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 hover:border-accent transition-all duration-300"
-            data-category="design">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-3-uJsBXCgl.webp"
-                alt="modern portfolio website design with minimalist layout, creative typography, pink and purple accents" />
-              <div
-                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">تصميم</span>
-                <div class="flex space-x-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-300 group"
-                    aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-300 group"
-                    aria-label="تصميم المشروع على Figma">
-                    <i class="fa-brands fa-figma text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">موقع شخصي إبداعي</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                تصميم موقع شخصي بأسلوب عصري وألوان جريئة
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Figma</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">UI/UX</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Prototype</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="portfolio-item  group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 hover:border-primary transition-all duration-300"
-            data-category="web">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-4-Czusdp5K.webp"
-                alt="corporate business website with professional layout, blue and white color scheme, modern design" />
-              <div
-                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">موقع ويب</span>
-                <div class="flex space-x-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
-                    aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
-                    aria-label="كود المشروع على GitHub">
-                    <i class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">موقع شركة استشارية</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                موقع احترافي لشركة استشارات مع نظام حجز المواعيد
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Next.js</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">TypeScript</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Prisma</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="portfolio-item group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 hover:border-secondary transition-all duration-300"
-            data-category="app">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-5-ChqqtI-W.webp"
-                alt="social media dashboard with analytics charts, user engagement metrics, modern interface design" />
-              <div
-                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-secondary/20 text-secondary rounded-full text-sm font-medium">تطبيق</span>
-                <div class="flex space-x-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
-                    aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
-                    aria-label="كود المشروع على GitHub">
-                    <i class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">لوحة تحليلات اجتماعية</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                منصة تحليل وإدارة حسابات التواصل الاجتماعي
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">React</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Chart.js</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">API</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="portfolio-item group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 hover:border-accent transition-all duration-300"
-            data-category="ecommerce">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-6-C9bxzsei.webp"
-                alt="fashion e-commerce website with luxury product display, elegant design, shopping experience" />
-              <div
-                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">تجارة</span>
-                <div class="flex space-x-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-300 group"
-                    aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-300 group"
-                    aria-label="كود المشروع على GitHub">
-                    <i class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">متجر أزياء فاخر</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                منصة تسوق راقية للأزياء مع تجربة مستخدم استثنائية
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Next.js</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Stripe</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Sanity</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="portfolio-item group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 hover:border-primary transition-all duration-300"
-            data-category="web">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-7-BXDNVwGk.webp"
-                alt="restaurant website with food menu, online ordering system, appetizing food photography" />
-              <div
-                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">موقع ويب</span>
-                <div class="flex space-x-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
-                    aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300 group"
-                    aria-label="كود المشروع على GitHub">
-                    <i class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">موقع مطعم وتوصيل</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                منصة طلب طعام مع نظام توصيل وتتبع الطلبات
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">React</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Express</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">PostgreSQL</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="portfolio-item group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 hover:border-secondary transition-all duration-300"
-            data-category="app">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-8-BnHB_F_a.webp"
-                alt="fitness tracking app interface with workout plans, progress charts, health metrics dashboard" />
-              <div
-                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-secondary/20 text-secondary rounded-full text-sm font-medium">تطبيق</span>
-                <div class="flex space-x-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
-                    aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
-                    aria-label="كود المشروع على GitHub">
-                    <i class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">تطبيق لياقة بدنية</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                تطبيق متكامل لتتبع التمارين والتغذية والتقدم
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">React Native</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Redux</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Firebase</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="portfolio-item group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 hover:border-accent transition-all duration-300"
-            data-category="design">
-            <div class="relative h-72 overflow-hidden">
-              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy" decoding="async" src="assets/imgs/portfolio-9-Q6q-wpwU.webp"
-                alt="mobile app ui design mockup with colorful screens, modern interface, user experience showcase" />
-              <div
-                class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-3">
-                <span class="px-4 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">تصميم</span>
-                <div class="flex space-x-2">
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-300 group"
-                    aria-label="معاينة المشروع">
-                    <i class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                  <a href="#"
-                    class="w-10 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-300 group"
-                    aria-label="تصميم المشروع على Figma">
-                    <i class="fa-brands fa-figma text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
-                      aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">تصميم تطبيق جوال</h3>
-              <p class="text-slate-500 dark:text-slate-400 mb-4">
-                تصميم UI/UX كامل لتطبيق جوال متعدد الوظائف
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Figma</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Adobe XD</span>
-                <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs">Sketch</span>
-              </div>
-            </div>
-          </div>
+    
         </div>
-
+    
         <div class="text-center mt-16">
           <a href="#contact"
             class="inline-block bg-linear-to-r from-primary to-secondary px-12 py-4 rounded-xl text-lg font-bold text-white hover:-translate-y-1 transition-all duration-300">
